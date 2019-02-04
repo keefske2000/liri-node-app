@@ -10,10 +10,24 @@ var spotify = new Spotify({
   secret: process.env.SPOTIFY_SECRET,
 });
  
-
-spotify.search({ type: 'track', query: 'All the Small Things' }, function(err, data) {
+var spotifyThisSong = (song)=>{
+//Function declared here
+spotify.search({ type: 'track', query: song }, function(err, data) {
   if (err) {
     return console.log('Error occurred: ' + err);
   }
-console.log(data); 
+  let results = data.tracks.items;
+
+  results.forEach((song,i) => {
+    console.log(`${song} at the index ${i}`);
+  });
+
+
 });
+//closed this 
+}
+//mdoule.exports 
+module.exports={
+
+  spotifyThisSong : spotifyThisSong
+}

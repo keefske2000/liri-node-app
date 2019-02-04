@@ -32,9 +32,9 @@ const getMovie = (movieName)=>{
 
 module.exports={
   getMovie: getMovie
-}
-// Then run a request with axios to the OMDB API with the movie specified
 
+// Then run a request with axios to the OMDB API with the movie specified
+}
 
 
 
