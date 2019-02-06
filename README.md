@@ -6,12 +6,12 @@
 
 # What Each LIRI Command Should Do 
 
-* **concertThis** will search the Bands in Town Artist Events API and retrieve the following 
+# **concertThis** will search the Bands in Town Artist Events API and retrieve the following 
 * Name of the Venue
 * Venue location
 * Date of the Event
 
-* **movieThis** will use **Axios** search **OMDP API**  returning these data responses below.
+# **movieThis** will use **Axios** search **OMDP API**  returning these data responses below.
 
 * Title of the movie.
 * Year the movie came out.
@@ -22,9 +22,9 @@
 * Plot of the movie.
 * Actors in the movie.
 
-* **doWhatItSays** will use **fs Node Package** taking the text in the **random.txt** file and logging it.
+# **doWhatItSays** will use **fs Node Package** taking the text in the **random.txt** file and logging it.
 
-* **spotifyThis** uses **node-spotify-api** along with **Spotify API** will show the following information about the song in your terminal/bash window.
+# **spotifyThis** uses **node-spotify-api** along with **Spotify API** will show the following information about the song in your terminal/bash window.
 
 * Artist(s)
 * The song's name
