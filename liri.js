@@ -14,8 +14,7 @@ var arg2 = process.argv[3]
 switch (arg1){
     case "movieThis":
         //Pull the the method from the Movie API methods....
-        console.log("Hey from the switch ")
-        console.log(movieThis)
+        
         movieThis.getMovie(arg2)
         break;
     case "spotifyThisSong":
@@ -28,7 +27,7 @@ switch (arg1){
         getConcert.getConcert(arg2)
         break;
     case "doWhatItSays":
-        console.log("I want it that way");
+      
         doThis.doThis(arg2)
         break;
     default:

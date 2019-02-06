@@ -11,27 +11,35 @@ var spotify = new Spotify({
 });
  
 var spotifyThisSong = (song)=>{
-//Function declared here
-spotify.search({ type: 'track', query: 'song', limit:10 }, function(err, song) {
-  if (err) {
-    return console.log('Error occurred: ' + err);
-  }
-  
-    else
-  
-  // let results = data.tracks.items;
 
-  // results.forEach((song,i) => {
-  //   console.log(`${song} at the index ${i}`);
-  console.log(song);
-  
+  spotify
+  .request("https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6/albums?offset=0&limit=2&include_groups=appears_on&market=ES")
+  .then(function(response) {
+    console.log(response);
+    console.log("Artist:" + response[0]);
+    console.log("Song's Title:" + response[0]);
+    console.log("Preview Link:" + response[0]);
+    console.log("Album:" + response[0]);
+    // console.log(data); 
+  })
+  .catch(function(err) {
+    console.error('Error occurred: ' + err); 
   });
-
+// Function declared here
+// spotify
+//   .search({ type: 'artist', query: 'song' })
+//   .then(function(response) {
+//     console.log("Artist:" + response[0]);
+//     console.log("Song's Title:" + response[0]);
+//     console.log("Preview Link:" + response[0]);
+//     console.log("Album:" + response[0]);
+//   })
+//   .catch(function(err) {
+//     console.log(err);
+//   });
 
 }
-//closed this 
 
-//mdoule.exports 
 module.exports={
 
   spotifyThisSong : spotifyThisSong
