@@ -12,20 +12,25 @@ var spotify = new Spotify({
  
 var spotifyThisSong = (song)=>{
 //Function declared here
-spotify.search({ type: 'track', query: song }, function(err, data) {
+spotify.search({ type: 'track', query: 'song', limit:10 }, function(err, song) {
   if (err) {
     return console.log('Error occurred: ' + err);
   }
-  let results = data.tracks.items;
+  
+    else
+  
+  // let results = data.tracks.items;
 
-  results.forEach((song,i) => {
-    console.log(`${song} at the index ${i}`);
+  // results.forEach((song,i) => {
+  //   console.log(`${song} at the index ${i}`);
+  console.log(song);
+  
   });
 
 
-});
-//closed this 
 }
+//closed this 
+
 //mdoule.exports 
 module.exports={
 
