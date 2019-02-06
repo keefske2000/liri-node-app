@@ -22,7 +22,7 @@
 * Plot of the movie.
 * Actors in the movie.
 
-# **doWhatItSays** will use **fs Node Package** taking the text in the **random.txt** file and logging it.
+## **doWhatItSays** will use **fs Node Package** taking the text in the **random.txt** "I Want it That Way," and logging it.
 
 # **spotifyThis** uses **node-spotify-api** along with **Spotify API** will show the following information about the song in your terminal/bash window.
 
