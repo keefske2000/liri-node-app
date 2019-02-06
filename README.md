@@ -7,6 +7,6 @@
 # What Each LIRI Command Should Do 
 
 * **concertThis** will search the Bands in Town Artist Events API and retrieve the following 
-*Name of the Venue
-*Venue location
-*Date of the Event
+* Name of the Venue
+* Venue location
+* Date of the Event
